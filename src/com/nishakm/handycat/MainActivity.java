@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
     	//record time of touch
     	sysTime2 = (int) System.currentTimeMillis();
     	int timeDiff = Math.abs(sysTime2-sysTime1);
-    	System.out.println("sysTime1: " + sysTime1 + "; sysTime2: "+ sysTime2 + "; diff: "+ timeDiff);
+
     	if(sysTime1 == 0 || timeDiff>WAIT_TIME){ //no continuous touching for some time now
     		//meow
     		MediaPlayer playMeow = MediaPlayer.create(this, R.raw.cat_meow);
